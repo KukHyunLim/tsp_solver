@@ -62,7 +62,7 @@ def fitness(s):
             pathLength = pathLength + length(node[1:], s[0])
         else:
             pathLength = pathLength + length(node[1:], s[idx+1])
-    return pathLength
+    return 1/pathLength
 
 
 def getRandomPath(s):
